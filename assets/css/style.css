@@ -74,7 +74,7 @@
 }
 .welcome-area .inner-wrap .title{
     text-align: center;
-    max-width: 50%;
+    max-width: 80%;
     color: var(--color-text-white);
 }
 .welcome-area .inner-wrap .title h1{
@@ -87,6 +87,17 @@
 }
 .welcome-area .inner-wrap .title a{
     text-transform: uppercase;
+}
+@media (max-width: 768px){
+    .welcome-area .inner-wrap .title h1{
+        max-width: 100%;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 576px){
+    .welcome-area .inner-wrap .title h1{
+        font-size: 1.6rem;
+    }
 }
 /*Welcome Area End*/
 
@@ -206,7 +217,7 @@
     z-index: 1;
 }
 .work-process .box-process:hover{
-    top: -1rem;
+    transform: translatey(-1rem);
 }
 .work-process .box-process strong{
     margin: 1rem 0 0.5rem 0;
@@ -215,7 +226,9 @@
 .work-process .box-process span{
     color: var(--color-text-secondary);
 }
-
+.work-process .row:nth-child(2) div{
+    margin-bottom: 3rem;
+}
 /*Work process end*/
 
 /* Testimonials start */
@@ -235,6 +248,8 @@
     border-radius: 1rem;
     background-color: var(--color-bg-white);
     box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    justify-content: center;
 }
 .testimonials .item-img{
     flex: 0 0 100%;
@@ -255,11 +270,16 @@
 }
 .testimonials .team-info{
     display: flex;
+    position: relative;
     flex-direction: column;
     flex: 0 0 80%;
     text-align: left;
     justify-content: center;
     padding-left: 1rem;
+    transition: all 0.3s ease;
+}
+.testimonials .team-info:hover{
+    transform: translateX(1rem);
 }
 .testimonials .team-info h3{
     font-size: 1rem;
@@ -268,6 +288,17 @@
 .testimonials .team-info span{
     font-size: 0.8rem;
     color: var(--pink-accent);
+}
+@media (max-width: 1200px){
+    .testimonials .user-image img {
+        width: 50%;
+    }
+    .testimonials .user-image {
+        flex: 0 0 25%;
+    }
+    .testimonials .team-info {
+        flex: 0 0 25%;
+    }
 }
 /* Testimonials end */
 
@@ -340,6 +371,9 @@
 .pricing .inner-pricing a{
     text-transform: uppercase;
 }
+.pricing .row:nth-child(2) div{
+    margin-bottom: 3rem;
+}
 /*Pricing end*/
 
 
@@ -376,6 +410,14 @@
 .counter .row > div:last-child .count-item:after{
     display: none;
 }
+@media (max-width: 1200px){
+    .counter .count-item{
+        margin: 0 0 3rem;
+    }
+    .counter .count-item:after{
+        display: none;
+    }
+}
 /* Counter end*/ 
 
 /*Blog start*/
@@ -411,6 +453,11 @@
     font-size: 0.8125rem;
     color: var(--color-text-secondary);
     margin-bottom: 2rem;
+}
+@media (max-width: 1200px){
+    .blog .row:nth-child(2) > div{
+        margin-bottom: 3rem;
+    }
 }
 /*Blog end*/
 
