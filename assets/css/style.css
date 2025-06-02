@@ -166,6 +166,14 @@
 .discuss-grow .inner-content .title p{
     color: var(--color-text-secondary);
 }
+@media (max-width: 1200px) {
+    .discuss-grow .inner-img{
+        padding: 5rem;
+    }
+    .discuss-grow .inner-img img{
+        width: 50%;
+    }
+}
 /* Discuss | grow end */
 
 /*Work process start*/
@@ -291,13 +299,18 @@
 }
 @media (max-width: 1200px){
     .testimonials .user-image img {
-        width: 50%;
+        width: 25%;
     }
     .testimonials .user-image {
-        flex: 0 0 25%;
+        flex: 0 0 50%;
+        text-align: end;
+        transform: translateX(-5%);
     }
     .testimonials .team-info {
-        flex: 0 0 25%;
+        flex: 0 0 50%;
+    }
+    .testimonials .row:nth-child(2) >div{
+        margin-bottom: 3rem;
     }
 }
 /* Testimonials end */
@@ -494,6 +507,7 @@
     border-radius: 1rem;
     border: none;
     outline: none;
+    font-size: 16px;
 }
 .contact-us input{
     margin-bottom: 1rem;
