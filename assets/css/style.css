@@ -14,14 +14,15 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--color-bg-white);
-    padding: 0.75rem 1.2rem;
+    padding: 0.75rem 2rem;
     border-radius: 2.5rem;
     min-height: 5rem;
+    box-shadow: 0px 2px 20px 15px rgba(0, 0, 0, 0.2);
 }
 .header .wrap-menu ul{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 0;
@@ -234,7 +235,7 @@
 .work-process .box-process span{
     color: var(--color-text-secondary);
 }
-.work-process .row:nth-child(2) div{
+.work-process .row:nth-child(2) > div{
     margin-bottom: 3rem;
 }
 /*Work process end*/
@@ -384,7 +385,7 @@
 .pricing .inner-pricing a{
     text-transform: uppercase;
 }
-.pricing .row:nth-child(2) div{
+.pricing .row:nth-child(2) > div{
     margin-bottom: 3rem;
 }
 /*Pricing end*/
